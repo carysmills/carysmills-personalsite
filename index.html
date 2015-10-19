@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Carys Mills </title>
+	<link href='https://fonts.googleapis.com/css?family=Bitter|Raleway' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+
+		<!-- navigation starts here -->
+		<nav>
+			<ul class="clearfix">
+				<li><a href="#home">Home</a></li> 
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="mailto:mills.carys@gmail.com">Contact</a></li>
+				</ul>
+		</nav>
+		<!-- navigation ends here -->
+
+		<!-- Banner with name starts here -->
+		<section class="banner" id="home">
+			<div class="wrapper">
+				<h1>Carys Mills</h1>
+				<h2>front-end developer &amp journalist </h2>
+			</div>
+		</section>
+		</header>
+		<!-- Banner with name ends here -->
+
+		<!-- bio section -->
+		<section class="bio clearfix" id="about">
+
+			<div class="wrapper clearfix">
+				<div class="profile">
+					<img src="images/smallheadshot.jpg" alt="Carys">
+				</div> 
+			
+			<article>
+				<p> <mark class="pink">Hi, I'm Carys.</mark> I'm a front-end web developer, currently completing the full-time bootcamp at <a href="http://hackeryou.com/">HackerYou</a>. I previously worked as a newspaper reporter and magazine social media editor. Now, I tell stories with code. </p>
+			</article>
+		</div>
+	</section>
+	<!-- end of bio section -->
+
+	<!-- toronto section -->
+
+	<section class="toronto">
+	</section>
+	<!-- end of toronto section -->
+
+	<!-- skills section starts -->
+	<section class="skills" id="skills">
+		<div class="wrapper clearfix">
+
+			<div class="skill"> 
+				<img src="images/code.png" alt="Front-end dev">
+				<h3>Front-end development</h3>
+				<div class="underline"></div>
+				<p>At HackerYou I am learning HTML5, CSS3, responsive design, JavaScript, jQuery, APIs, WordPress, Sass, Gulp, Github and more.</p> 
+			</div>
+		
+			<div class="skill"> 
+				<img src="images/hashtag.png" alt="Twitter hashtag">
+				<h3>Social media expertise</h3>
+				<div class="underline"></div>
+				<p>I worked as a writer and social media editor at Canadian Geographic magazine, so I know how to create an online community.</p> 
+			</div>
+		
+			<div class="skill"> 
+				<img src="images/newspaper.png" alt="Newspaper">
+				<h3>Reporting &amp writing</h3>
+				<div class="underline"></div>
+				<p>I've reported for The Globe and Mail, Toronto Star and Ottawa Citizen, writing both news and longer feature stories.</p> 
+			</div>
+		</div>
+	</section>
+	<!-- skills section ends -->
+
+	<!-- footer begins -->
+	<footer>
+		<div class="wrapper">
+				<ul class="clearfix">
+					<li><a href="http://carysmills.com/">By Carys Mills</a></li>
+
+					<li><a href="https://github.com/carysmills"><i class="fa fa-github"></i></a></li>
+
+					<li><a href="https://twitter.com/CarysMills"><i class="fa fa-twitter"></i></a></li>
+
+					<li><a href="https://www.linkedin.com/in/carysmills"><i class="fa fa-linkedin"></a></i></li>
+
+					<li><a href="mailto:hello@carysmills.com">Get in touch!</a></li>
+				</ul>
+		</div>
+	</footer>
+	<!-- footer ends -->
+	<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>
+
+<!-- Thank you to the following places for graphics and images:
+- Fonts from Google fonts
+
+- before gradient was applied, paper background  image from Deviant Art: http://angelaacevedo.deviantart.com/art/Texture-Notebook-Paper-3-46495593?q=boost%3Apopular+paper+texture&qo=29
+
+-photo of Carys Mills by Pam Lau: http://pamlau.com/
+
+-photo of Toronto skyline by Carys Mills
+
+-before gradient was applied, background pinstripe pattern from Alex Berkowitz on Subtle Patterns http://subtlepatterns.com/pinstriped-suit/
+
+-skill icons and favicon are all from the Noun Project. Angle brackets are made by By Björn Andersson. Favicon made by By Darren Wilson. Hashtag from Matthew Hall. Newspaper from André Luiz Gollo.
+
+-social media footer fonts from Font Awesome.  
+
+-->

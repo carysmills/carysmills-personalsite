@@ -1,0 +1,316 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+html {
+	font-size: 62.5%;
+}
+
+::selection {
+  background: #bc5570;
+}
+
+::-moz-selection {
+  background: #bc5570;
+}
+
+nav {
+	background-color: #272635;
+	list-style: none;
+	padding-left:50%;
+	position: fixed;
+	width: 100%;
+}
+
+@media all and (max-width: 727px) {
+	nav {
+		display: inline-block;
+		padding-left: 0;
+		position: absolute;
+		}
+	}	
+
+nav li {
+	float: left;
+	margin: 0 1% 1% 0;
+	font-family: 'Bitter', serif;
+	font-size: 2.5rem;
+	list-style: none;
+	min-width: 22%;
+}
+
+@media all and (max-width: 667px) {
+	nav a {
+		font-size: 1.5rem;	
+		margin: 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #EADCB1;
+}
+
+
+a:hover {
+	color: #bc5570;
+	transition: all 0.5s;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+    line-height: 2.7rem;
+}
+
+h1 {
+	font-family: 'Bitter', serif;
+	font-size: 6rem;
+	font-weight: lighter;
+	letter-spacing: 0.5rem;
+	padding-bottom: 0;
+	color: #272635;
+}	
+
+@media all and (max-width: 320px) {
+	h1 {
+		font-size: 3rem;
+		letter-spacing: 0.1rem;
+	}
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: .25rem;
+	color: #bc5570;
+	font-size: 2.5rem;
+}
+
+@media all and (max-width: 320px) {
+	h2 {
+		font-size: 1.5rem;
+		letter-spacing: 0.1rem;
+	}
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	color: #EADCB1;
+	font-size: 1.75rem;
+}
+
+section.banner {
+	background-image: 
+        linear-gradient(rgba(166,166,168,0.7), rgba(166,166,168,1)), 
+        url(images/notebook.jpg);
+	height: 100vh;
+	padding-top: 225px;
+	text-align:center;
+
+}
+
+@media all and (max-width: 727px) {
+	section.banner {
+		max-height: 70vh;
+		min-height: 420px;
+		padding-top: 200px;
+		}
+	}
+
+
+@media all and (max-width: 320px) {
+	section.banner {
+		max-height: 80vh;
+		padding-top: 125px;
+		}
+	}		
+
+section.bio {
+	background: #272635;
+	padding: 30px 0;
+}
+
+section.bio p {
+	padding-top: 12%;
+	padding-left:17%;
+	font-size: 2rem;
+	letter-spacing: 0.15rem;
+}
+
+section.bio mark.pink {
+	color: #bc5570;
+    background: none;
+    font-family: 'Bitter', serif;
+	font-size: 4rem;
+}
+
+.profile {
+	float: right;
+	width: 35%;
+	padding-top: 3.5%;
+}
+
+@media all and (max-width: 1024px) {
+	.wrapper .profile {
+		padding-top: 5%;
+	}
+}
+
+@media all and (max-width: 727px) {
+	.wrapper .profile {
+			width: 100%;
+            padding-left: 17%;
+			float: none;
+		}
+	}
+
+section.bio article {
+	float: left;
+	width: 50%;
+}
+
+@media all and (max-width: 727px) {
+	section.bio article {
+			width: 100%;
+			text-align: center;
+			padding-right: 10%;
+		}
+	}
+
+section.bio .profile img {
+	max-width: 80%;
+	border-radius: 50%;
+}
+
+.toronto {
+	background: url(images/toronto.jpg) center fixed;
+	height: 60vh;
+	background-size: cover;
+}
+
+
+@media all and (max-width: 667px) {
+	.toronto {
+	background: url(images/torontocropped.jpg) center no-repeat;
+	height: 30vh;
+	background-size: cover;
+		}
+	}
+
+
+section.skills {
+	background-image:
+        linear-gradient(rgba(198,188,200,0.7), rgba(198,188,200,0.8)), 
+        url(images/pinstriped_suit.png);
+        padding-top: 9%;
+        padding-bottom: 9%;
+}
+
+.skill {
+	width: 33.33%;
+	float: left;
+}
+
+@media all and (max-width: 727px) {
+	.skill {
+		width: 100%;
+		padding-bottom: 10%;
+		}
+	}
+
+.skill img {
+	width: 40%;
+	margin: 0 calc(33.33% - 9px);
+}
+
+.underline {
+	background: #bc5570;;
+	width: 50%;
+	height: 0.3rem;
+	margin: 0 auto;
+}
+
+@media all and (max-width: 727px) {
+	.underline {
+		margin-bottom: 5%;
+		}
+	}
+
+.skill p {
+	margin-left: 10%;
+	color: #EADCB1;
+}
+
+@media all and (max-width: 727px) {
+	.skill p {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		}
+	}
+
+h3 {
+	color: #372549;
+	text-align: center;
+	font-size: 2.5rem;
+	letter-spacing: 0.15rem;
+	maximum-width: 33.3%;
+}
+
+footer {
+	background-color: #272635;
+	padding-top: 0.1%;
+	padding-bottom: 0.1%;
+	width: 100%;
+	}
+
+footer ul {
+	list-style: none;
+}
+
+footer li {
+	float: left;
+	color: #885053;
+	font-family: 'Bitter', serif;
+	font-size: 2.5rem;
+	min-width: 20%;
+	text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+	footer li {
+		font-size: 2rem;
+	}
+}
+
+@media all and (max-width: 727px) {
+	footer li {
+		width: 100%;
+		padding-bottom: 3%;
+		padding-right: 10%;
+		}
+	}
+
+@media all and (max-width: 320px) {
+	footer li {
+		padding-right: 15%;
+		}
+	}		
+
+a, a:active, a:focus {
+	outline: none;
+}
+
+
